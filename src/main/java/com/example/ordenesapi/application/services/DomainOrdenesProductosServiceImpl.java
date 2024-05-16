@@ -15,9 +15,6 @@ public class DomainOrdenesProductosServiceImpl implements IOrdenesProductosServi
         return repository.create(ordenesproductos);
     }
 
-    @Override
-    public OrdenesProductos update(OrdenesProductos ordenesProductos) {
-        return repository.update(ordenesProductos);
-    }
+
 
 }

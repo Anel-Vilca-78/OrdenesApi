@@ -20,4 +20,9 @@ public class DomainOrderServiceImpl implements IOrderService {
         return repository.list();
     }
 
+    @Override
+    public Order update(Order order, String id) {
+        return repository.update(order, id);
+    }
+
 }

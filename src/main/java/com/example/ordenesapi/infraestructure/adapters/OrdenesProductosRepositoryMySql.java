@@ -26,10 +26,4 @@ public class OrdenesProductosRepositoryMySql implements IOrdenesProductosReposit
         return this.iOrdenesProductosMappper.toOrdenesProductos(this.repository.save(ordenesProductosEntity));
     }
 
-    @Override
-    public OrdenesProductos update(OrdenesProductos ordenesProductos) {
-        OrdenesProductosEntity ordenesProductosEntity = this.iOrdenesProductosMappper.toOrdenesProductosEntity(ordenesProductos);
-        return this.iOrdenesProductosMappper.toOrdenesProductos(this.repository.save(ordenesProductosEntity));
-    }
-
 }

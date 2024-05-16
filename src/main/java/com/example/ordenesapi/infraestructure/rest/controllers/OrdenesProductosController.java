@@ -22,9 +22,4 @@ public class OrdenesProductosController {
         return new ResponseEntity<>(service.create(ordenesProductos), HttpStatus.CREATED);
     }
 
-    @PutMapping
-    public ResponseEntity<OrdenesProductos> update(@RequestBody OrdenesProductos ordenesProductos){
-        return new ResponseEntity<>(service.update(ordenesProductos), HttpStatus.OK);
-    }
-
 }
